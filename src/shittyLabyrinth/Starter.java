@@ -20,7 +20,20 @@ public class Starter {
     	
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the Viking's Labyrinth, please enter your name:");
-        String name = input.nextLine();
+        
+        String name = "Michi";
+        int input1 = 0;
+		int tries = 0;
+		while(tries < 3)
+			if (input.hasNext("[a-zA-Z][a-zA-Z ]+")){ 
+				name = input.nextLine(); 
+				break;
+			} else { 
+			System.err.println("ERROR: not a valid Input");
+			System.out.println("Welcome to the Viking's Labyrinth, please enter your name:");
+			input.nextLine();
+			tries++;
+		} 
         Labyrinth labyrinth = new Labyrinth();
         Player player = new Player(labyrinth, name);
         boolean gameWon = false;
