@@ -1,14 +1,14 @@
-package shittyLabyrinth;
+
 
 public class Labyrinth {
 
     private int currentRoom;
     private final String[] roomNames = {
-        "Viking Hall", 
-        "Fjord of Sorrows", 
-        "Dragon's Lair", 
-        "Asgard's Gate", 
-        "Valhalla"
+            "Viking Hall",
+            "Fjord of Sorrows",
+            "Dragon's Lair",
+            "Asgard's Gate",
+            "Valhalla"
     };
 
     public Labyrinth() {
@@ -20,19 +20,19 @@ public class Labyrinth {
     }
 
     public boolean move(String direction) {
-    	
+
         if (direction.equals("north")) {
-        	if (currentRoom != 0) {
-        		currentRoom--;
-        	}
+            if (currentRoom != 0) {
+                currentRoom--;
+            }
         } else if (direction.equals("south")) {
-        		currentRoom++;
+            currentRoom++;
         } else if (direction.equals("east")) {
-        		currentRoom++;
+            currentRoom++;
         } else if (direction.equals("west")) {
-        	if (currentRoom != 0) {
-        		currentRoom--;
-        	}
+            if (currentRoom != 0) {
+                currentRoom--;
+            }
         }
 
         if (currentRoom == 4) {

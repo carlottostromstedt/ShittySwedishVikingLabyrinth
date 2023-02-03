@@ -1,5 +1,3 @@
-package shittyLabyrinth;
-
 public class Player {
     private Labyrinth labyrinth;
     private String name;
