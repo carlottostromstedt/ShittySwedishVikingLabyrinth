@@ -20,7 +20,7 @@ Spieler startet die Applikation -> ASCII-Bild wird in der Konsole dargestellt. S
 - Ich habe zuerst ein Grundkonzept aufgestellt mit einer Klasse
 - Danach habe ich die einzelnen Komponenten Labyrinth und Player als eigene Klassen gestaltet 
 - Um schön Ascii darstellen zu können habe ich eine Klasse Ascii erstellt die mit einer Funktion in der Konsole ASCII generiert
-- Als abschluss habe ich eine Starter-Methode erstellt, die alles zusammenbringt
+- Als Abschluss habe ich eine Starter-Methode erstellt, die alles zusammenbringt
 
 ## Testfälle
 
